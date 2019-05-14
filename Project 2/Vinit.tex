@@ -1,0 +1,1048 @@
+%\documentclass[conference]{IEEEtran}
+%\documentclass[journal,onecolumn,draftclsnofoot,]{IEEEtran}
+\documentclass[12pt]{report}
+%\documentclass[conference]{IEEEtran}
+%\documentclass{acm_proc_article-sp}
+%%%% ADDED -- PPD --- START
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{bbding}
+\usepackage{fancyvrb}
+\usepackage{color,soul}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{bbding}
+\usepackage{enumerate}
+\usepackage{color,soul}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{bbding}
+\usepackage{amsmath}
+\usepackage{xcolor}
+%\usepackage{hyperref}
+\usepackage{colortbl}
+\usepackage{fancybox}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{multirow}
+%\usepackage{subcaption}
+\usepackage{capt-of}
+\usepackage{color,soul}
+\usetikzlibrary{fit,shapes.geometric}
+\usepackage{latexsym}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+
+%\usepackage[a4paper, lmargin=0.8in, rmargin=0.8in, tmargin=0.6in, bmargin=0.6in]{geometry}
+\renewcommand{\thesection}{\Roman{section}} 
+\usepackage[lmargin=1in, rmargin=1in, tmargin=1in, bmargin=1in]{geometry}
+
+%\usepackage{enumitem}
+%\usepackage[inline]{enumerate}
+%\usepackage[inline]{enumitem}
+%%%% ADDED -- PPD --- END
+\begin{document}
+\thispagestyle{empty}
+\input{epsf}
+\begin{center}
+	{\Huge \bf Measurements in physical optics}
+\end{center}
+\vspace{0.5cm}
+{\centering {\Large Electromagnetism and Optics Laboratory}\par}
+{\centering {\Large PH39008}\par}
+
+\vspace{5.5cm}
+
+{\centering \textbf{\Large Vinit Kumar Singh}\par}
+{\centering \large Roll No: 16PH20036 \par}
+{\centering \large \em vinitsingh911@gmail.com \par}
+
+\vspace{3.0cm}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=3cm,width=3cm]{IIT_Logo.png}
+\end{figure}
+
+
+\begin{center}
+	{\textbf{Date: 15.01.2019} \\
+		\textbf{Department: Physics} \\
+		\textbf{Indian Institute of Technology, Kharagpur,}\\
+		\textbf {WB 721302, India}\\
+
+	}
+\end{center}
+\newpage
+\tableofcontents
+
+\newpage
+
+\begin{center}
+\section*{Abstract}
+\end{center}
+Optics represents a very important and much researched field in applied as well as theoretical physics. Such an important field merits an high level of exposure to students. Study of wave phenomenon and particle nature is the basis upon which experiments on physical optics are built. This owes to the fact that light (and all electromagnetic radiations) exhibitdual nature - they behave as both particles and waves. We can perform experiments to study wave phenomenon such as interference, diffraction, polarisation, etc. By performing these experiments, we can infer a lot about the characteristics of the waves that make up electromagnetic radiation. We can also construct experiments which demonstrate the particle nature of elcetromagnetic radiation. Experiments involving photoelectric effect for light are used to study the particle nature. Certain experiments conducted on diffraction, polarisation and photoconductivity are of particular importance and will be focused upon by the authors so as to verify several laws relating to wave mechanics and particle nature of electromagnetic radiation. \\ \\
+
+\newpage
+\chapter{Introduction and motivation}
+\section{Photoconductivity}
+Photoconductivity is a phenomenon which is based upon the particle nature of light. Photoconductivity occurs because light can be considered as packets of finite energy. When these packets interact with electrons, they are absorbed by the electron or are reflected by the electron resulting in an exchange of energy. When this exchange results in the increase in electron's energy, we have the electron go from the valence band to the conductive band and hence for the material to have an increase in its conductivity.\\
+Photoconductivity is a very important which phenomenon which used in a lot of electronics. Devices such as solar panels use principles which are also applicable in photoconductivity and hence the study of photoconductivity can help in the understanding of this principles which then can be extended and applied to other phenomenon in elctronics and other fields
+
+\section{Wave phenomena: diffraction and polarisation}
+Diffraction and polarization are both phenomenon which occur due to radiation possessing a wave nature and displaying wave characteristics. Diffraction is the phenomenon which occurs when light strikes an edge. This results in a sort of bending of light and  we get finite intensity of light in regions where we expect zero itensity from classical ray optics. If we have multiple edges in close proximity to each other with light incident on them, the light waves will diffract from each of the edges and interfere with each other to give a more complex pattern (more complex than from simple addition of each edge). 
+Polarization is also a wave phenomenon. Radiation is a transverse wave which has oscillations of electric field and magnetic field in a plane which is perpendicular to direction of propogation of the radiation. The phenomenon of restricting the direction of these oscillations is called polarization. \\
+The study of wave phenomenon is very essential because many natural phenomenon and man made make use of these wave phenomenon. The wings of the butterfly are classic examples of diffraction in nature. The wings act as an grating which result in diffraction and are responsible for the colours of the wing. We use diffraction in the study of crystals. We can find parameters like distance between planes using diffraction. Polarization is used in sunglasses to reduce the intensity of light which is incident on the eyes. Such uses necessitate the study of wave phenomenon.
+
+\section{Summary of experiments performed}
+\begin{enumerate}
+	\item To study and verify the intensity pattern due to diffraction which is formed on a screen when plane polarized laser light is passed through:-
+	\begin{itemize}
+		\item An inductive grid (An array of square apertures).
+		\item A conductive grid (An array of opaque squares).
+	\end{itemize}
+	\item Determination of the diffraction pattern of the microwave intensity 
+	\begin{itemize}
+		\item behind the edge of a screeen.
+		\item after passing through a slit.
+		\item behind a slit of variable width, with a fixed receiving point.
+	\end{itemize}
+	\item To verify Mallus law and to study the elliptical polarization of light.
+	\item  To study the Photoconductivity of \textbf{CdS} photo-resistor at constant irradiance and constant voltage 
+	\begin{itemize}
+		\item To plot the current- voltage characteristics at constant irradiance. 
+		\item To measure photocurrent I$_{Ph}$ as a function of irradiance $\phi$ at constant voltage. 
+	\end{itemize}
+\end{enumerate}
+
+\chapter{Experimental set-ups and relevant theory}
+\section{Photoconductivity set-up}
+\textsc{\large{Apparatus: }}
+\begin{itemize}
+	\item Lamp Housing
+	\item Adjustable slit
+	\item Polarizer
+	\item Analyzer
+	\item Two convex lens
+	\item Photo-resistor
+	\item Multimeter
+	\item Optical bench with fixing mounts
+\end{itemize}
+\textsc{\large{Theory:}}
+\\
+\\
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{1_0.png}
+	\end{center}
+\end{wrapfigure}
+Photoconductivity is an optical and electrical phenomenon in which a material become more electrically conductive due to the absorption of electromagnetic radiation such as visible light, ultraviolet light, infrared light, or gamma radiations. is the effect of increasing electrical conductivity $\Phi$ in a solid due to light absorption. When the so-called internal photo effect takes place, the energy absorbed enables the transition of activator electrons into the conduction band and the charge exchange of traps with holes being created in the valence band. In the process, the number of charge carriers in the crystal lattice increases and as a result, the conductivity is enhanced.\\
+\newpage
+When light is absorbed by a material such as a semiconductor, the number of free electrons and electron holes changes and raises its electrical conductivity. To cause excitation, the light that strikes the semiconductor must have enough energy to raise electrons across the band gap. When a photoconductive material is connected as part of a circuit, it functions as a resistor whose resistance depends on the light intensity. In this context the material is called a photoresistor. Fig.1 depicts the current flow in a photoresistor when exposed to light rays.\\ \\Semiconductor resistors that depend on the irradiance (photoconductive cells) are based on this principle. They have opened up a wide field of applications and are, among other things, employed in twilight switches and light meters. The semiconductor materials most commonly used are cadmium compounds, particularly CdS. \\ \\The photocurrent is studied as a function of the voltage applied to the photoresistor at a constant irradiance (current-voltage characteristics) and as a function of the irradiance at a constant voltage (current-irradiance characteristics). 
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{0.65\textwidth}
+		\includegraphics[width=\textwidth]{1_01.png}
+	\end{subfigure}
+	\begin{subfigure}{0.65\textwidth}
+		\includegraphics[width=\textwidth]{1_02.png}
+	\end{subfigure}
+\end{figure}
+
+\newpage
+\section{Light diffraction set-up and the grids}
+\textsc{\large{Apparatus:}}
+\begin{itemize}
+	\item He-Ne Laser
+	\item Conductive grid (array of opaque sqaures)
+	\item Inductive grid (array of square apertures)
+	\item Optical bench with suitable uprights.
+	\item Laser detector with current measuring device.
+\end{itemize}
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_I0.png}
+		\caption{Inductive Grid}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_C0.png}
+		\caption{Capacitive Grid}
+	\end{subfigure}
+\end{figure}
+\textsc{\large{Theory: }}
+\\
+\\
+If we consider a to have a single square aperture with a side length 'a', we see that the itensity on the screen is given by:
+$$ I = I_0 sinc^2(\alpha) sinc^2(\beta) $$
+where,\\
+$\alpha = \frac{2\pi xa}{D\lambda}$ \\
+$\beta = \frac{2\pi ya}{D\lambda}$ \\
+D is distance of screen from square aperture.\\
+$\lambda$ is wavelength of light.
+\\
+\\
+In our case, we have an array of square apertures which form a sort of a grid. For such an array of apertures, we will have to add the contributions from all the apertures. For an array we get
+$$ G(P) = \frac{1}{NM}sin(\alpha)sinc(\beta) * \Large\{ \large\sum_{N} \large\sum_{M} exp\{-i2\pi [(j-1)\delta_x + (l-1)\delta_y]\}\Large\} $$
+where,\\
+G(P) is the relative amplitude of diffraction pattern.\\
+$\alpha = \pi [(1-k)/\lambda]a(sin(\theta_1)+sin(\theta_2))$\\
+$\beta = \pi [(1-k)/\lambda]a(sin(\phi_1)+sin(\phi_2))$\\
+$\delta_x = (a/\lambda)(sin(\theta_1)+sin(\theta_2))$\\
+$\delta_y = (a/\lambda)(sin(\phi_1)+sin(\phi_2))$\\
+$k = 2t/a$\\
+N is the number of rows.\\
+M is the number of columns.\\
+2t is the distance between the adjascent parallel edges of two adjascent apertures.\\\\
+We get Intensity $I = |G(P)|^2$. The function will have sharp peaks when $\pi \delta_x = m\pi$ and $\pi \delta_y = m\pi$, where m is an integer (Also assuming small diffraction angle).\\
+From the above conditions we get
+$$\Delta\theta|_{max} = \lambda/a$$
+From the sinc function, we see that at $\alpha = n\pi$ and $\beta = n\pi$ we will get minimas.
+$$\therefore \Delta\theta|_{min} = \lambda/2t$$
+where $\Delta\theta|_{max}$ is the angular distance of the first sahrp peak from the central maxima and $\Delta\theta|_{min}$ is the angular distance of the first minima from the central maxima due to the sinc function.\\
+We will also get minimas when  $\pi \delta_x \neq m\pi$ and $\pi \delta_y \neq m\pi$ and  $N\pi \delta_x = m\pi$ and $M\pi \delta_y = m\pi$, where m is an integer. Assuming small diffraction angle, we get
+$$ \Delta\theta|_{min} = \lambda/(Na) $$ and $$ \Delta\theta|_{min} = \lambda/(Ma) $$
+All this has been done assuming that the side length 'a' is greater than the distance between two aperture edges '2t'. 
+\newpage
+
+
+\section{Diffraction of micro-waves: set-up}
+\textsc{\large{Apparatus: }}
+\begin{itemize}
+	\item Microwave transmitter w. klystron.
+	\item Microwave receiving dipole
+	\item Microwave power supply, 220V
+	\item Screen, metal, 300X300 mm
+	\item Multirange meter with amplifier
+	\item Measuring tape
+	\item Meter Scale
+	\item Tripod base
+	\item Barrel base
+	\item right angle clamp
+	\item Support rod
+	\item G-Clamp
+	\item Connecting cords
+	\end{itemize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{3_0.png}
+\end{figure}
+\textsc{\large{Theory:}}
+\\
+\\
+If a spherical wave with its origin at P strikes an obstacle at 0, the intensity at the point of observation P’ is calculated from the Huygens’ principle according to which eaxh point around the obstacle is the origin of a new spherical wave. The space is divided up into zones, commencing in the plane of the obstacel, so that the average distances from adjacent zones (Fresnel zones) to P’ differ by $ \lambda/2 $ where $ \lambda $ is the wave-length. The radii of the zones, for small radii, using the symbols shown in Fig. 2, are aproximately given by:
+$$ r_n = \sqrt{R(1-R/\alpha)\lambda}\sqrt{n} $$
+As the zones interfere destructively because of the phase difference adopted, only about half the intensity of the innermost zone contributes to the total intensity at P’.
+The diffraction of microwaves at the edge of a screen, due to interference of the wave directly incident with the cylindrical wave produced at the edge, produces maxima and minima on a line which runs parallel to the screen. The total intensity, expressed as a function of the distance $\rho$ from the edge of the screen to this line, is:
+$$ I = C'\Big[\{\int_{\omega}^{-\infty}\cos{\frac{\pi}{2}n^2}dn\}^2 + \{\int_{\omega}^{-\infty}\sin{\frac{\pi}{2}n^2}dn\}^2\Big] $$
+C' is a constant; the upper limit $\omega$ is given by:
+$$ \omega = \rho \frac{2}{\lambda}\Big\{\frac{1}{R_0} + \frac{1}{R}\Big\} $$
+
+$R_0 + R$ is the distance between the radiation source and the receiving point, $R_0$ and $R$ being the respective distances between the plane of the screen and the source and the receiving point on the line connecting P and P’.\\ \\
+Maxima and minima occur if the difference r-s between (a) the distance and (b) the perpendicular distance between the receiving point and the edge of the screen satisfies the following condition:\\
+$ r-s = -(n+\frac{3}{8})\lambda$ \qquad maximum \\\\
+$ r-s = -(n+\frac{7}{8})\lambda$ \qquad minimum\\
+where n is a whole number.\\\\
+\newpage
+\begin{wrapfigure}{l}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{3_01.png}
+	\end{center}
+\end{wrapfigure}
+If a wave field impinges on a slit of width d, and if G(y) is the amplitude of the waves arriving at the slit, then a secondary wave is emitted from each point.
+If the primary waves arriving at the slit and the waves measured at P’ can be regarded approximately as plane waves (Fraunhofer diffraction), the radiation intensity produced at P’, by vectorial summation of all amplitudes, is:
+\[I = \Big\{\int_{c}^{d}G(y)exp\big(i\frac{2\pi}{\lambda}y\sin{\alpha}\big)dy\Big\}^2\]
+where $\alpha$ is the receiving point angle. If G(y) is constant, this reduces to
+
+$$ I = \Big(\frac{\sin{\varepsilon}}{\varepsilon}\Big)^2 $$
+where
+$$ \varepsilon = \frac{\pi d}{\lambda}\sin{\alpha} $$
+Minima for \textit{I} are thus produced for
+$$ \sin{\alpha} = n\frac{\lambda}{d} $$
+In order to obtain a minimum, \textit{d} must be greater than or equal to $\lambda$, i.e. $d\geq\lambda$.
+\newpage
+
+
+\section{Polarisation set-up} 
+
+\textsc{\large{Apparatus: }}
+\begin{itemize}
+	\item He-Ne Laser with inbuilt power supply.
+	\item Polarizer
+	\item Analyser
+	\item Quarter Wave Plate
+	\item Laser detector with current measuring device.
+	\item Optivcal bench with suitable uprights.
+\end{itemize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{2_0.png}
+\end{figure}
+\textsc{\large{Theory:}}
+\\
+\\
+If the incident light is represented by
+\[E = A\: cos(wt-kz)\]
+Then the two rays travel with different velocities through the quarter waveplate emerges with a relative phase difference $\delta$=$\pi$/2. So, the emergent rays are represented by 
+\[x=a\: sin(wt-kz)\]
+\[y=a\: cos(wt-kz)\]
+which forms an elliptically polarized light of the form
+\[\frac{x^2}{a^2}\: +\: \frac{y^2}{b^2}\:=1 \]
+Now ,the intensity of light transmitted by the analyzer is
+\[I=a^2cos^2{\theta}+b^2sin^2{\theta}\]
+\[=(a^2-b^2)cos^2{\theta}+b^2\]
+So, for $\theta = 0^\circ$ and $\theta=180^\circ$
+\[I=I_{max}=a^2\]
+and for $\theta=90^\circ$ and $\theta=270^\circ$
+\[I=I_{max}=b^2\]
+\newpage
+
+\chapter{Experimental results and analysis}
+
+\section{Photoconductivity measurements}    
+\subsection{Current-Voltage characteristic at constant irradiance $\phi$:}
+
+The relation between the photocurrent I$_P$$_h$ and the voltage U applied at a constant irradiance
+(constant angle between the polarization planes of the filters), i.e. the current-voltage
+characteristics. Even at an angle $\alpha = 90^\circ$ between the polarization planes of
+the filters a photocurrent flows, since in this position the polarization filters do not extinguish the ray of light completely.
+
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c| } 
+		\hline
+		Voltage (V) & \multicolumn{4}{|c|}{Photocurrent ($\mu$A)}\\ 
+		\hline
+		& $0^o$ & $30^o$ & $60^o$ & $90^o$ \\
+		\hline
+		0  & 0    & 0    & 0    & 0.0 \\
+		2  & 1.17 & 1.06 & 0.75 & 0.6 \\
+		4  & 2.3  & 2.06 & 1.51 & 1.2 \\
+		6  & 3.45 & 3.12 & 2.27 & 1.8 \\
+		8  & 4.59 & 4.16 & 3.05 & 2.4 \\
+		10 & 5.8  & 5.26 & 3.83 & 3.1 \\
+		12 & 7    & 6.37 & 4.64 & 3.7 \\
+		14 & 8.3  & 7.54 & 5.45 & 4.3 \\
+		16 & 9.57 & 8.65 & 6.25 & 5.0 \\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{1_1.png}
+\end{figure}
+
+\vspace{0.5cm}
+
+From the graph we obtain the slope of various current-voltage characteristics at different angles between the polarization planes of the filters ($\alpha$). The slope gives the conductance of CdS Photoresistor at a particular irradiance. \\
+
+\begin{center}
+	\begin{tabular}{ |c|c|c| } 
+		\hline
+		Angle ($\alpha$) &  Conductance ($\mu$A/V) & Error ($\mu$A/V x10$^-$$^3$) \\ 
+		\hline
+		$0^o$   & 0.5952 & 5.3\\
+		$30^o$  & 0.5400 & 4.5\\
+		$60^o$  & 0.3910 & 2.1\\
+		$90^o$  & 0.3109 & 1.5\\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+The CdS photoresistor behaves like an ohmic resistance that depends on the irradiance.\\
+
+\subsection{Current-Irradiance characteristics at constant voltage U:}
+The relation between the photocurrent I$_P$$_h$ and the irradiance at a constant voltage, the current-irradiance characteristics. The term $cos^2(\alpha)$ is a relative measure for the
+irradiance ( angle between the polarization planes of the filters). As expected, the photocurrent increases with increasing irradiance. However, the characteristics are not perfectly linear. The slope rather decreases with increasing irradiance. 
+
+\begin{center}
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		$cos^2$($\alpha$) & \multicolumn{3}{|c|}{Photocurrent ($\mu$A)}\\ 
+		\hline
+		& 1V & 8V & 16V \\
+		\hline
+		1.0 & 0.55 & 4.8  & 9.89 \\
+		0.9 & 0.54 & 4.53 & 9.34 \\
+		0.8 & 0.52 & 4.34 & 9.1  \\
+		0.8 & 0.51 & 4.19 & 8.79 \\
+		0.6 & 0.47 & 3.8  & 7.95 \\
+		0.5 & 0.45 & 3.6  & 7.53 \\
+		0.4 & 0.42 & 3.35 & 7.11 \\
+		0.3 & 0.4  & 3.17 & 6.71 \\
+		0.2 & 0.34 & 2.77 & 5.88 \\
+		0.1 & 0.32 & 2.6  & 5.51 \\
+		0.0 & 0.28 & 2.24 & 4.82 \\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{1_2.png}
+\end{figure}
+
+To capture the non-linear behavior of the curves we use a quadratic fitting.\\
+\begin{center}
+	f(x)=a$x^2$+bx+c
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		Voltage (V) &  a ($\mu$A) & b ($\mu$A) & c ($\mu$A)\\ 
+		\hline
+		$1V$  & -0.1319 & 0.4089 & 0.2761\\
+		$8V$  & -0.2563 & 2.7749 & 2.2652\\
+		$16V$ & -0.7859 & 5.8196 & 4.8414\\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\newpage
+\section{Measuring grating parameters using diffraction}
+Distance between slit and screen (D) = 108.8 cm
+
+\subsection{Inductive Grid}
+\textbf{X-axis}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		X (cm) & Intensity (mA) & X (cm) & Intensity (mA) & X (cm) & Intensity (mA) \\ 
+		\hline
+12   & 0.031 & 15.1 & 0.104 & 18.1 & 0.016 \\
+12.1 & 0.028 & 15.2 & 0.121 & 18.2 & 0.022 \\
+12.2 & 0.026 & 15.3 & 0.149 & 18.3 & 0.036 \\
+12.3 & 0.023 & 15.4 & 0.201 & 18.4 & 0.055 \\
+12.4 & 0.031 & 15.5 & 0.268 & 18.5 & 0.074 \\
+12.5 & 0.04  & 15.6 & 0.343 & 18.6 & 0.088 \\
+12.6 & 0.051 & 15.7 & 0.414 & 18.7 & 0.102 \\
+12.7 & 0.063 & 15.8 & 0.487 & 18.8 & 0.11  \\
+12.8 & 0.076 & 15.9 & 0.554 & 18.9 & 0.113 \\
+12.9 & 0.088 & 16   & 0.618 & 19   & 0.117 \\
+13   & 0.096 & 16.1 & 0.656 & 19.1 & 0.118 \\
+13.1 & 0.102 & 16.2 & 0.68  & 19.2 & 0.116 \\
+13.2 & 0.104 & 16.3 & 0.693 & 19.3 & 0.109 \\
+13.3 & 0.105 & 16.4 & 0.696 & 19.4 & 0.099 \\
+13.4 & 0.102 & 16.5 & 0.686 & 19.5 & 0.086 \\
+13.5 & 0.104 & 16.6 & 0.682 & 19.6 & 0.072 \\
+13.6 & 0.105 & 16.7 & 0.618 & 19.7 & 0.059 \\
+13.7 & 0.102 & 16.8 & 0.555 & 19.8 & 0.049 \\
+13.8 & 0.096 & 16.9 & 0.475 & 19.9 & 0.042 \\
+13.9 & 0.086 & 17   & 0.418 & 20   & 0.04  \\
+14   & 0.073 & 17.1 & 0.354 & 20.1 & 0.039 \\
+14.1 & 0.059 & 17.2 & 0.305 & 20.2 & 0.037 \\
+14.2 & 0.045 & 17.3 & 0.268 & 20.3 & 0.032 \\
+14.3 & 0.04  & 17.4 & 0.233 & 20.4 & 0.024 \\
+14.4 & 0.041 & 17.5 & 0.196 & 20.5 & 0.018 \\
+14.5 & 0.052 & 17.6 & 0.155 & 20.6 & 0.014 \\
+14.6 & 0.068 & 17.7 & 0.11  & 20.7 & 0.015 \\
+14.7 & 0.084 & 17.8 & 0.07  & 20.8 & 0.03  \\
+14.8 & 0.095 & 17.9 & 0.04  & 20.9 & 0.027 \\
+14.9 & 0.1   & 18   & 0.021 & 21   & 0.033 \\
+15   & 0.101 &      &       &      &       \\
+	\hline
+\end{tabular}
+\\
+\end{center}
+
+\newpage
+\textbf{Y-axis}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		Y (cm) & Intensity ($\mu$A) & Y (cm) & Intensity ($\mu$A) & Y (cm) & Intensity ($\mu$A) \\ 
+		\hline
+		4   & 26  & 7.4  & 122 & 10.7 & 36  \\
+		4.1 & 26  & 7.5  & 118 & 10.8 & 67  \\
+		4.2 & 23  & 7.6  & 112 & 10.9 & 92  \\
+		4.3 & 27  & 7.7  & 123 & 11   & 114 \\
+		4.4 & 32  & 7.8  & 151 & 11.1 & 116 \\
+		4.5 & 37  & 7.9  & 206 & 11.2 & 112 \\
+		4.6 & 40  & 8    & 266 & 11.3 & 104 \\
+		4.7 & 39  & 8.1  & 350 & 11.4 & 98  \\
+		4.8 & 37  & 8.2  & 431 & 11.5 & 100 \\
+		4.9 & 31  & 8.3  & 494 & 11.6 & 98  \\
+		5   & 26  & 8.4  & 548 & 11.7 & 101 \\
+		5.1 & 24  & 8.5  & 591 & 11.8 & 102 \\
+		5.2 & 27  & 8.6  & 623 & 11.9 & 100 \\
+		5.3 & 34  & 8.7  & 651 & 12   & 95  \\
+		5.4 & 50  & 8.8  & 670 & 12.1 & 88  \\
+		5.5 & 69  & 8.9  & 675 & 12.2 & 81  \\
+		5.6 & 87  & 9    & 666 & 12.3 & 74  \\
+		5.7 & 104 & 9.1  & 645 & 12.4 & 67  \\
+		5.8 & 114 & 9.2  & 612 & 12.5 & 61  \\
+		5.9 & 121 & 9.3  & 573 & 12.6 & 51  \\
+		6   & 128 & 9.4  & 522 & 12.7 & 43  \\
+		6.1 & 132 & 9.5  & 470 & 12.8 & 35  \\
+		6.2 & 133 & 9.6  & 429 & 12.9 & 27  \\
+		6.3 & 130 & 9.7  & 387 & 13   & 20  \\
+		6.4 & 123 & 9.8  & 343 & 13.1 & 14  \\
+		6.5 & 111 & 9.9  & 298 & 13.2 & 11  \\
+		6.6 & 97  & 10   & 244 & 13.3 & 10  \\
+		6.7 & 83  & 10.1 & 185 & 13.4 & 13  \\
+		6.8 & 73  & 10.2 & 127 & 13.5 & 22  \\
+		6.9 & 71  & 10.3 & 75  & 13.6 & 32  \\
+		7   & 79  & 10.4 & 34  & 13.7 & 42  \\
+		7.1 & 93  & 10.5 & 14  & 13.8 & 44  \\
+		7.2 & 108 & 10.6 & 17  & 13.9 & 47  \\
+		7.3 & 119 &      &     &      &     \\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\newpage
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_I1.png}
+		\begin{center} 
+			Computationally Reconstructed: 2D Diffraction Image
+		\end{center}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_I2.png}
+		\begin{center}
+			Computationally Reconstructed: Variation of Intensity along central axis.
+		\end{center}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_I6.png}
+		Variation of Intensity along X-axis
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_I7.png}
+		Variation of Intensity along Y-axis.
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{4_I5.png}
+		\begin{center} 
+			2D Diffraction Image: Reconstructed using X and Y components along central axis. 
+		\end{center}
+	\end{subfigure}
+\end{figure}
+
+\newpage
+\subsection{Capacitive Grid}
+\textbf{X-axis}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		X (cm) & Intensity ($\mu$A) & X (cm) & Intensity ($\mu$A) & X (cm) & Intensity ($\mu$A) \\ 
+		\hline
+		12   & 69  & 15.1 & 156  & 18.1 & 71  \\
+		12.1 & 69  & 15.2 & 238  & 18.2 & 71  \\
+		12.2 & 65  & 15.3 & 325  & 18.3 & 68  \\
+		12.3 & 59  & 15.4 & 416  & 18.4 & 67  \\
+		12.4 & 55  & 15.5 & 522  & 18.5 & 72  \\
+		12.5 & 53  & 15.6 & 614  & 18.6 & 88  \\
+		12.6 & 57  & 15.7 & 729  & 18.7 & 111 \\
+		12.7 & 65  & 15.8 & 837  & 18.8 & 132 \\
+		12.8 & 80  & 15.9 & 954  & 18.9 & 147 \\
+		12.9 & 91  & 16   & 1050 & 19   & 158 \\
+		13   & 98  & 16.1 & 1150 & 19.1 & 163 \\
+		13.1 & 105 & 16.2 & 1223 & 19.2 & 165 \\
+		13.2 & 108 & 16.3 & 1259 & 19.3 & 161 \\
+		13.3 & 110 & 16.4 & 1257 & 19.4 & 153 \\
+		13.4 & 112 & 16.5 & 1193 & 19.5 & 142 \\
+		13.5 & 112 & 16.6 & 1120 & 19.6 & 128 \\
+		13.6 & 110 & 16.7 & 1038 & 19.7 & 109 \\
+		13.7 & 107 & 16.8 & 957  & 19.8 & 90  \\
+		13.8 & 101 & 16.9 & 885  & 19.9 & 70  \\
+		13.9 & 93  & 17   & 798  & 20   & 58  \\
+		14   & 88  & 17.1 & 703  & 20.1 & 52  \\
+		14.1 & 84  & 17.2 & 580  & 20.2 & 52  \\
+		14.2 & 83  & 17.3 & 467  & 20.3 & 52  \\
+		14.3 & 80  & 17.4 & 330  & 20.4 & 51  \\
+		14.4 & 75  & 17.5 & 237  & 20.5 & 47  \\
+		14.5 & 64  & 17.6 & 153  & 20.6 & 40  \\
+		14.6 & 48  & 17.7 & 99   & 20.7 & 31  \\
+		14.7 & 35  & 17.8 & 73   & 20.8 & 23  \\
+		14.8 & 34  & 17.9 & 68   & 20.9 & 19  \\
+		14.9 & 53  & 18   & 66   & 21   & 21  \\
+		15   & 94  &      &      &      &     \\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\newpage
+\textbf{Y-axis}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		Y (cm) & Intensity (mA) & Y (cm) & Intensity (mA) & Y (cm) & Intensity (mA)\\ 
+		\hline
+		2.4 & 0.045 & 5.8 & 0.083 & 9.2  & 0.111 \\
+		2.5 & 0.049 & 5.9 & 0.15  & 9.3  & 0.099 \\
+		2.6 & 0.051 & 6   & 0.246 & 9.4  & 0.089 \\
+		2.7 & 0.056 & 6.1 & 0.333 & 9.5  & 0.088 \\
+		2.8 & 0.055 & 6.2 & 0.398 & 9.6  & 0.093 \\
+		2.9 & 0.052 & 6.3 & 0.438 & 9.7  & 0.095 \\
+		3   & 0.049 & 6.4 & 0.511 & 9.8  & 0.089 \\
+		3.1 & 0.044 & 6.5 & 0.595 & 9.9  & 0.068 \\
+		3.2 & 0.036 & 6.6 & 0.714 & 10   & 0.049 \\
+		3.3 & 0.032 & 6.7 & 0.834 & 10.1 & 0.034 \\
+		3.4 & 0.034 & 6.8 & 0.922 & 10.2 & 0.028 \\
+		3.5 & 0.039 & 6.9 & 0.968 & 10.3 & 0.03  \\
+		3.6 & 0.04  & 7   & 0.992 & 10.4 & 0.032 \\
+		3.7 & 0.032 & 7.1 & 0.963 & 10.5 & 0.029 \\
+		3.8 & 0.023 & 7.2 & 0.925 & 10.6 & 0.023 \\
+		3.9 & 0.027 & 7.3 & 0.883 & 10.7 & 0.022 \\
+		4   & 0.045 & 7.4 & 0.84  & 10.8 & 0.03  \\
+		4.1 & 0.066 & 7.5 & 0.782 & 10.9 & 0.046 \\
+		4.2 & 0.084 & 7.6 & 0.696 & 11   & 0.055 \\
+		4.3 & 0.094 & 7.7 & 0.581 & 11.1 & 0.055 \\
+		4.4 & 0.102 & 7.8 & 0.412 & 11.2 & 0.046 \\
+		4.5 & 0.108 & 7.9 & 0.261 & 11.3 & 0.037 \\
+		4.6 & 0.117 & 8   & 0.148 & 11.4 & 0.031 \\
+		4.7 & 0.123 & 8.1 & 0.099 & 11.5 & 0.03  \\
+		4.8 & 0.116 & 8.2 & 0.103 & 11.6 & 0.032 \\
+		4.9 & 0.102 & 8.3 & 0.126 & 11.7 & 0.036 \\
+		5   & 0.087 & 8.4 & 0.132 & 11.8 & 0.038 \\
+		5.1 & 0.08  & 8.5 & 0.109 & 11.9 & 0.039 \\
+		5.2 & 0.096 & 8.6 & 0.07  & 12   & 0.035 \\
+		5.3 & 0.117 & 8.7 & 0.044 &      &       \\
+		\hline
+	\end{tabular}
+\\
+\end{center}
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_C1.png}
+		\begin{center} 
+			Computationally Reconstructed: 2D Diffraction Image
+		\end{center}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_C2.png}
+		\begin{center}
+			Computationally Reconstructed: Variation of Intensity along central axis.
+		\end{center}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_C6.png}
+		Variation of Intensity along X-axis
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{4_C7.png}
+		Variation of Intensity along Y-axis.
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{4_C5.png}
+		\begin{center} 
+			2D Diffraction Image: Reconstructed using X and Y components along central axis. 
+		\end{center}
+	\end{subfigure}
+\end{figure}
+
+
+\newpage
+\section{Observing diffraction with microwaves}
+
+\newpage
+\subsection{Diffraction of the Microwaves at the edge of a screen}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		X (cm) & Intensity ($\mu$A) & X (cm) & Intensity ($\mu$A) & X (cm) & Intensity ($\mu$A)\\ 
+		\hline
+		-200 & 1  & -20 & 67  & 160 & 177 \\
+		-190 & 5  & -10 & 99  & 170 & 169 \\
+		-180 & 2  & 0   & 144 & 180 & 134 \\
+		-170 & 9  & 10  & 199 & 190 & 78  \\
+		-160 & 8  & 20  & 272 & 200 & 44  \\
+		-150 & 2  & 30  & 356 & 210 & 26  \\
+		-140 & 0  & 40  & 418 & 220 & 27  \\
+		-130 & 1  & 50  & 433 & 230 & 55  \\
+		-120 & 5  & 60  & 445 & 240 & 80  \\
+		-110 & 15 & 70  & 426 & 250 & 87  \\
+		-100 & 16 & 80  & 383 & 260 & 82  \\
+		-90  & 25 & 90  & 268 & 270 & 52  \\
+		-80  & 37 & 100 & 170 & 280 & 29  \\
+		-70  & 25 & 110 & 95  & 290 & 27  \\
+		-60  & 35 & 120 & 68  & 300 & 38  \\
+		-50  & 31 & 130 & 86  & 310 & 41  \\
+		-40  & 41 & 140 & 108 & 320 & 42  \\
+		-30  & 50 & 150 & 154 & 330 & 38  \\
+		\hline
+	\end{tabular}
+\\
+\end{center}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{Micro1.png}
+\end{figure}
+
+\newpage
+\subsection{Diffraction of the Microwaves at the slit}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		X (cm) & Intensity ($\mu$A) & X (cm) & Intensity ($\mu$A) & X (cm) & Intensity ($\mu$A)\\ 
+		-300 & 7  & -120 & 0   & 50  & 72 \\
+		-290 & 6  & -110 & 2   & 60  & 18 \\
+		-280 & 3  & -100 & 13  & 70  & 23 \\
+		-270 & 3  & -90  & 19  & 80  & 0  \\
+		-260 & 1  & -80  & 34  & 90  & 8  \\
+		-250 & 5  & -70  & 43  & 100 & 7  \\
+		-240 & 4  & -60  & 67  & 110 & 2  \\
+		-230 & 9  & -50  & 95  & 120 & 2  \\
+		-220 & 14 & -40  & 178 & 130 & 12 \\
+		-210 & 8  & -30  & 295 & 140 & 21 \\
+		-200 & 7  & -20  & 361 & 150 & 27 \\
+		-190 & 2  & -10  & 417 & 160 & 16 \\
+		-180 & 8  & 0    & 503 & 170 & 7  \\
+		-170 & 12 & 10   & 504 & 180 & 6  \\
+		-160 & 15 & 20   & 427 & 190 & 14 \\
+		-150 & 10 & 30   & 322 & 200 & 16 \\
+		-140 & 6  & 40   & 198 & 210 & 15 \\
+		-130 & 3  &      &     &     &    \\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{Micro2.png}
+\end{figure}
+
+\newpage
+\subsection{Diffraction of the Microwaves at the slit with varying slit width}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		D (cm) & Intensity (mA) & D (cm) & Intensity (mA) & D (cm) & Intensity (mA)\\ 
+		\hline
+		10 & 0.35 & 80  & 87.8 & 150 & 56.4 \\
+		20 & 5.7  & 90  & 82.7 & 160 & 50.2 \\
+		30 & 10.4 & 100 & 77.4 & 170 & 53   \\
+		40 & 19.8 & 110 & 74.5 & 180 & 49.2 \\
+		50 & 48   & 120 & 75.3 & 190 & 60.5 \\
+		60 & 62.5 & 130 & 68.1 & 200 & 63.3 \\
+		70 & 77   & 140 & 60.9 &     &      \\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Micro3.png}
+\end{figure}
+
+
+\newpage
+\section{Measuring polarization properties}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+		Angle (degrees) & Photocurrent & cos($\theta$) & Angle (degrees) & Photocurrent & cos($\theta$)\\ 
+		\hline
+0   & 17.7 & 1.00  & 185 & 19   & -0.94 \\
+5   & 19.8 & 0.28  & 190 & 19.3 & 0.07  \\
+10  & 20   & -0.84 & 195 & 19.1 & 0.98  \\
+15  & 20.2 & -0.76 & 200 & 17.8 & 0.49  \\
+20  & 20.2 & 0.41  & 205 & 16   & -0.70 \\
+25  & 19.9 & 0.99  & 210 & 16.5 & -0.88 \\
+30  & 19   & 0.15  & 215 & 13.6 & 0.20  \\
+35  & 17.4 & -0.90 & 220 & 12   & 1.00  \\
+40  & 15.2 & -0.67 & 225 & 8.8  & 0.37  \\
+45  & 14.6 & 0.53  & 230 & 7    & -0.79 \\
+50  & 9.9  & 0.96  & 235 & 6.8  & -0.81 \\
+55  & 9.1  & 0.02  & 240 & 5.5  & 0.33  \\
+60  & 6.7  & -0.95 & 245 & 3.9  & 1.00  \\
+65  & 4.6  & -0.56 & 250 & 2.5  & 0.24  \\
+70  & 2.8  & 0.63  & 255 & 1.2  & -0.86 \\
+75  & 1.7  & 0.92  & 260 & 0.6  & -0.73 \\
+80  & 0.7  & -0.11 & 265 & 0.1  & 0.45  \\
+85  & 0.2  & -0.98 & 270 & 0    & 0.98  \\
+90  & 0    & -0.45 & 275 & 0.2  & 0.11  \\
+95  & 0.1  & 0.73  & 280 & 0.7  & -0.92 \\
+100 & 0.4  & 0.86  & 285 & 1.3  & -0.63 \\
+105 & 0.9  & -0.24 & 290 & 2.1  & 0.56  \\
+110 & 1.6  & -1.00 & 295 & 2.5  & 0.95  \\
+115 & 2.4  & -0.33 & 300 & 3.4  & -0.02 \\
+120 & 3.5  & 0.81  & 305 & 5    & -0.96 \\
+125 & 4.6  & 0.79  & 310 & 6.3  & -0.53 \\
+130 & 6.8  & -0.37 & 315 & 7    & 0.67  \\
+135 & 7.8  & -1.00 & 320 & 8.2  & 0.90  \\
+140 & 9.5  & -0.20 & 325 & 8.7  & -0.15 \\
+145 & 11.2 & 0.88  & 330 & 9.4  & -0.99 \\
+150 & 11.4 & 0.70  & 335 & 10.8 & -0.41 \\
+155 & 11.2 & -0.49 & 340 & 11.8 & 0.76  \\
+160 & 11.7 & -0.98 & 345 & 13.6 & 0.84  \\
+165 & 13.5 & -0.07 & 350 & 16.3 & -0.28 \\
+170 & 16.1 & 0.94  & 355 & 16.6 & -1.00 \\
+175 & 17   & 0.60  & 360 & 17.7 & -0.28 \\
+180 & 17.7 & -0.60 &     &      &       \\
+		\hline
+\end{tabular}
+\\
+\end{center}
+
+The intensity of light transmitted by the analyzer is,
+
+\[I=(a^2-b^2)cos^2{\theta}+b^2\]   
+In the following analysis we have used parameter P1, P2, and P3 to fit the data. 
+\[I=P1+P2*cos^2{(\theta-P3)}\] 
+Comparing above two equations we have,
+\[P1=b^2,\    P2=(a^2-b^2)\]
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{2_1.png}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics{2_2.png}
+	\includegraphics{2_6.png}
+\end{figure}
+
+\newpage
+\textbf{ \\Measurement of current for different orientation between analyzer and quarter wave plate}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c|c|c|c| } 
+		\hline
+		Angle & \multicolumn{3}{c}{Photocurrent ($\mu$A)} & Angle & \multicolumn{3}{|c|}{Photocurrent ($\mu$A)}\\ 
+		\hline
+		& I & II & III &  & I & II & III \\
+		\hline
+0   & 13.6 & 20.6 & 10.6 & 190 & 13.4 & 16.6 & 15.4 \\
+10  & 14.7 & 18.5 & 14   & 200 & 14.4 & 14.6 & 19.5 \\
+20  & 14.9 & 15.2 & 17.2 & 210 & 15.3 & 12.2 & 22.6 \\
+30  & 14.7 & 12.7 & 20.5 & 220 & 14.2 & 9.7  & 22.8 \\
+40  & 14.8 & 10.3 & 22.1 & 230 & 13.1 & 8.7  & 24.4 \\
+50  & 12.6 & 9.1  & 23.8 & 240 & 12.5 & 9.0  & 24.4 \\
+60  & 12.6 & 9.8  & 24.4 & 250 & 11.8 & 10.2 & 22.9 \\
+70  & 12.8 & 11.7 & 24.4 & 260 & 11.1 & 11.8 & 20.6 \\
+80  & 12.6 & 14.3 & 21.9 & 270 & 10.4 & 13.6 & 18.6 \\
+90  & 12.2 & 16.9 & 18.9 & 280 & 10   & 15.5 & 13.6 \\
+100 & 11.8 & 19.8 & 14.6 & 290 & 10.1 & 17.2 & 11.9 \\
+110 & 11.2 & 22.0 & 11.7 & 300 & 9.9  & 18.9 & 8.9  \\
+120 & 11.6 & 24.7 & 8.7  & 310 & 10.3 & 20.4 & 6.4  \\
+130 & 11.6 & 25.4 & 6.7  & 320 & 11.2 & 21.9 & 6.3  \\
+140 & 10.7 & 23.5 & 6.1  & 330 & 12.3 & 22.9 & 6.9  \\
+150 & 10.8 & 22.5 & 6.2  & 340 & 12.4 & 22.0 & 7.8  \\
+160 & 12.8 & 21.9 & 7.6  & 350 & 12.2 & 21.6 & 9.6  \\
+170 & 12.8 & 21.3 & 8.9  & 360 & 13.6 & 20.6 & 10.6 \\
+180 & 12.6 & 18.4 & 11.4 &     &      &      &    \\ 
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\text{ }\\ \\
+\textbf{Estimation of a/b}
+\begin{center}
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		Setting& $a^2$-$b^2$ & $b^2$ & a/b\\
+		\hline
+		I&3.752  & 10.514 & 1.357\\
+		II&13.809 & 9.955  & 2.387\\
+		III&18.621 & 5.720  & 4.255\\
+		\hline
+\end{tabular}
+\\
+\end{center}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{2_3.png}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics{2_4.png}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics{2_5.png}
+\end{figure}
+
+
+\chapter{Error analysis}
+\section{Photoconductivity measurement}
+\textbf{Current-Voltage characteristic of CdS Photoresistor}\\
+To compute the error in slope, we used the following formula,
+\[\frac{\Sigma^n_{i=1}{(y_i-y)^2}}{(n-2)\Sigma^n_{i=1}{(x_i-x)^2}}\]
+Error in Conductance at a particular irradiance.
+\begin{center}
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		Angle ($\alpha$) &  Conductance ($\mu$A/V) & Error ($\mu$A/V x10$^-$$^3$) & Percentage Error \\ 
+		\hline
+		$0^o$   & 0.5952 & 5.3 & 0.89\%\\
+		$30^o$  & 0.5400 & 4.5 & 0.83\%\\
+		$60^o$  & 0.3910 & 2.1 & 0.54\%\\
+		$90^o$  & 0.3109 & 1.5 & 0.48\%\\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+Maximum statistical error in the conductance value is 0.89\%.\\ \\
+\textbf{Current-Irradiance characteristics of the CdS Photoresistor}\\
+The statistical error associated with the quadratic fitting is computed as following.
+
+\[f(x)=ax^2+bx+c\]
+\[\Delta=\sqrt{\Sigma_{i=1}^n(f(x_i)-y_i)^2}\]
+
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c| } 
+		\hline
+		Voltage (V) &  a ($\mu$A) & b ($\mu$A) & c ($\mu$A) & Error $\Delta$ ($\mu$A)\\ 
+		\hline
+		$1V$  & -0.1319 & 0.4089 & 0.2761 & 0.0033\\
+		$8V$  & -0.2563 & 2.7749 & 2.2652 & 0.0181\\
+		$16V$ & -0.7859 & 5.8196 & 4.8414 & 0.0237\\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+\section{Diffraction}
+We do not require error analysis in case of Laser Diffraction and Diffraction of Microwaves because the analysis done is qualitative and the aim was to verify the general behavior of the functions.
+\section{Measuring polarization properties}
+The statistical error associated with the fitting of the following equation is computed. 
+\[I=P1+P2*cos^2{(\theta-P3)}\] 
+\[Error=\sqrt{\Sigma_{i=1}^n(I_{measured}-I_{fit})^2}\]
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c| } 
+		\hline
+		Setting&$ a^2$-$b^2$ & $b^2$ & a/b & Error\\
+		\hline
+		Malus Law & 18.584 & $\approx$0 & $\infty$ & 1.4605\\
+		I &3.752  & 10.514 & 1.357 & 0.6651\\
+		II &13.809 & 9.955  & 2.387 & 1.5019\\
+		III &18.621 & 5.720  & 4.255 & 0.7392\\
+		\hline
+	\end{tabular}
+	\\
+\end{center}
+
+\chapter{Conclusion, discussion and remarks}
+\section{Laser Diffraction}
+\textbf{Results}\\
+We can see that the data and the plots obtained from the data show somewhat similar characteristics as the theoretically expected results.\\\\
+\textbf{Precautions}
+\begin{enumerate}
+	\item We should take care to adjust the zero of the current measuring apparatus and also ensure that the background light intensity is minimum and non
+	\item We should ensure that the laser beam should be incident at a perpendicular angle on the inductive/ capacitive grid.
+	\item Source, aperture and Detector should lie along the optical axis.
+	\item At the beginning of the experiment the intensity at the central maxima is to be maximized by properly setting up the apparatus. 
+	\item Background light intensity should be minimum and non fluctuating.
+\end{enumerate}
+\textbf{Sources of Error}
+\begin{enumerate}
+	\item Asymmetric illumination of square apertures by the laser.
+	\item Laser does not have constant intensity over the area of illumination.
+	\item Grids were not perfect squares in shape.
+	\item Physical vibrations were shaking the detector hence readings were affected. 
+\end{enumerate}
+\textbf{Discussion}\\
+The intensity distribution obtained did not show proper maximas and minimas. We were expecting symmetrical behavior in the experimentally obtained intensity distribution as seen in the theoretical computation. Though the asymmetry could be accounted by the fact that in theoretical computation we took some ideality assumptions like laser illuminates the square aperture in a symmetric fashion following a perfect Gaussian distribution whereas in reality the laser illuminates the slits in an asymmetric fashion.\\
+Also in the computation we assume at the edges of the apertures/ opaque parts to be perfectly smooth, but in actuality they may have been rough which will result in a move away from ideal characteristics and may also cause asymmetry in the result obtained.\\\\
+\textbf{Computational Approach}\\
+Using Computational Methods we reconstructed the Diffraction image of the inductive and capacitive grids of an array of square opening. To carry on the computation we used concepts from Fourier Optics mainly the principle that states that Intensity distribution function obtained on the screen is a Fourier Transform of the Function of Intensity Distribution at the slit.\\ 
+The first step is to simulate the Intensity Distribution Function (IDF) at the slit. Since in our case the IDF is an array of square aperture, we used digital function having 0's at the place of wire and 1's at the place of opening. Then we illuminated the center of the slit function using a laser function. To do this we assumed that the intensity distribution of laser follows a Gaussian distribution, i.e. the laser is brightest at the center and the intensity decays like a Gaussian around it.\\   
+As a final step we took the Fourier transform of this simulated IDF. To perform the fourier transform we employed the Fast Fourier Transform Algorithms which is used for performing Fourier Transform over discrete functions.\\
+The computationally reconstructed images shows very close behavior to what we obtained experimentally.\\ \\
+\textbf{Reconstruction of 2D Image}
+To make a comparison between the computationally obtained data and experimental data, we reconstructed a 2D Image out of the 1D experimental data. We took the data experimentally across the central maxima along x-axis and y-axis. Then we used tensor dot product of the intensity data along the two axis to finally reconstruct the image.    
+\begin{center}
+	I(x,y)=$I_x$(x).$I_y$(y)
+\end{center}
+where '.' represents a tensor dot product.\\
+\newpage
+\section{Microwave Diffraction}
+\textbf{Results}\\
+We see that the the nature plots obtained match well with the results from the functions obtained theoretically which we obtain theoretically.\\\\
+\textbf{Precautions}
+\begin{enumerate}
+	\item Source, Slit and Detector should lie along the optical axis.
+	\item Slits should be perpendicular to the optical axis.
+	\item We should ensure that the receiver is moved in a plane which is parallel to the plane in which the screen and the edges lie.
+	\item Physical movement should be minimized because microwaves have large wavelength and diffraction pattern gets affected by changes in the surrounding.
+	\item Intensity of Microwave is heavily fluctuating so before noting the reading one should wait for ample amount of time and observe the mean about which it fluctuates. 
+	\item Distance between the source and slit is a crucial factor in this experiment. The distance should neither be too far else the intensity of the microwave at the detector will be too low, nor it should be too close else the expected fringe pattern will not be observed. 
+\end{enumerate}
+\textbf{Sources of Error}
+\begin{enumerate}
+	\item Intensity of Microwave coming from the source was heavily fluctuating so the apparent least count was increased by an order of magnitude. 
+	\item Since microwaves have large wavelength, the rays getting reflected from nearby walls were also interfering with the rays from the slit.
+	\item Mobile and telecommunication devices use microwaves for transmission. There were numerous such devices in the surrounding which were interfering with the microwaves coming from the source. 
+\end{enumerate}
+\textbf{Discussion}\\
+The first time the experiment was done, there was a funnel attached at the receiver which resulted in inaccuracy in the experiment. This could have been because we were getting the average intensity of a range of points instead of at the exact point where the receiver was located. Also since the mouth of the funnel had a side length in the same order of magnitude as the wavelength of the microwaves, there could have been diffraction taking place at the sides of the funnel attached resulting in a change in intensity obtained.\\
+We had to redo the experiment a number of times with varying distances of the source from the slits/ edge to finally get perfect results.\\
+There was a lot of random fluctuation in the reading obtained from the receiver.\\ 
+The position of people and objects around the setup also had an effect on the readings obtained. This may be because the objects might have reflected some of the microwaves and sent it towards the receiver resulting in the increase in the readings\\\\
+\section{Polarization}
+\textbf{Results}\\
+Malus law is confirmed by the plot obtained from the first part of the experiment. \\\\
+\textbf{Precautions}
+\begin{enumerate}
+	\item Care should be taken that the angle between the plane of polarization of the  polarizer and the optic axis of quarter wave plate is not 0$^\circ$ or 90$^\circ$ or 180$^\circ$ because at these angles, the waveplate will not behave like a uniaxial material.
+	\item We should ensure that the polarizer, the analyzer and the quarter wave plate are centered along the optical axis to get maximum efficiency from the set up.
+	\item We should take care to adjust the zero of the current measuring apparatus and also ensure that the background light intensity is minimum and non fluctuating.
+\end{enumerate}
+\textbf{Sources of Error}
+\begin{enumerate}
+	\item Laser source was itself polarized. Hence, the intensity obtained depended on the angle of the polarizer instead of it being only dependent on the angle between the polarizer and the analyzer.
+\end{enumerate}
+\textbf{Discussion}\\
+Getting Circular Polarization by setting the Quarter Wave Plate at an angle of $45^o$ was difficult. As I already mentioned in the sources of error that that laser source was itself polarized so the output that we were getting out of the Polarizer was perfectly obeying the Malus Law. Hence we did not get expected circular polarization at $45^o$. The value of a/b should be exact 1 for circular polarization whereas what we obtained was 1.357 which is more like Elliptical Polarization.\\ \\
+\textbf{Non-Linear Curve Fitting}
+The analysis of the experiment demanded non-linear fitting of the data points on the curve,
+\[I=P1+P2*cos^2{(\theta-P3)}\] 
+To obtain such a fitting I made use of lsqcurve fit function that is in-build in MATLAB. You can refer the codes by following the link given in the bibliography.  
+\\\\
+
+\newpage
+\section{Photoconductivity}
+\textbf{Results}\\
+We see that the relation between the photocurrent I$_P$$_h$ and the voltage U applied at a constant irradiance (constant angle between the polarization planes of the filters) shows a linear behavior. This shows that the material obeys Ohm's Law in the voltage range in which we operate. Even at an angle $\alpha = 90^\circ$ between the polarization planes of the filters a photocurrent flows since the material will have some intrinsic non zero conductivity.\\
+At $\theta = 0^\circ$, Conductance = 0.5952 $\pm$ 5.3 X 10$^{-3} \mu$A/V \\
+At $\theta = 30^\circ$, Conductance = 0.5400 $\pm$ 4.5 X 10$^{-3} \mu$A/V \\
+At $\theta = 60^\circ$, Conductance = 0.3910 $\pm$ 2.1 X 10$^{-3} \mu$A/V \\
+At $\theta = 90^\circ$, Conductance = 0.3109 $\pm$ 1.5 X 10$^{-3} \mu$A/V 
+
+The relation between the photocurrent I$_P$$_h$ and the irradiance $\phi$ at a constant voltage, the current-irradiance characteristics. The term $cos^2(\alpha)$ is a relative measure for the irradiance ( angle between the polarization planes of the filters). As expected, the photocurrent increases with increasing irradiance. We expect the line to be a straight line but according to Malus law. However, the characteristics are not perfectly linear. The slope rather decreases with increasing irradiance. This maybe attributed to the fact that even though the number of photons emmitted by the source is directly proportional to the irradiance, the number of electrons which gain enough electron to enter the conduction band is not proportional to the intensity since all photons do not provide enough energy to the electron they interact with it to let them escape to the conduction band.\\\\
+\textbf{Precautions}
+\begin{enumerate}
+	\item We should ensure that the photoresistor should lie on the focal plane of the focusing lens.
+\end{enumerate}
+\textbf{Sources of Error}
+\begin{enumerate}
+	\item Background illumination
+	\item Inefficiency of polarizers
+	\item The initial light was polarised so the intensity of light changed with the angle of the polarizer.
+\end{enumerate}
+\textbf{Discussion}\\
+Photodetectors are made up of semiconductors. When light is absorbed by them the number of free electrons and holes changes and raises its electrical conductivity. So we expect that with increase in the irradiance of light the photocurrent will increase which is what we obtain experimentally. This increase in photocurrent is not linear because efficiency of Photodetectors decreases as the intensity of light is increases.\\ 
+When the polarization planes of the filters were at 90$^\circ$ there was still a non zero intensity of light which was being received by the photoresistor which resulted in a greater than expected reading. This may have been due to inefficiency of the filters. Moreover we know that Photodetectors are combination of doped semiconductors connected in reverse bias configuration. So, even if the intensity of light is turned zero by covering the detector with something we get some small photocurrent.\\
+To analyze these expected behavior, we performed quadratic fitting on the data points. The intercept term in the fit represents the current at zero illumination, the coefficient associated with linear power captures the general trend of increase in photocurrent with increasing irradiance, and the coefficient associated with the quadratic term captures the decrease in the efficiency of detector with increasing irradiance.\\\\
+\newpage
+\Large{\textbf{Bibliography}}
+\begin{itemize}
+	\item Optics - Ajoy Ghatak
+	\item Fundamentals of Optics - Jenkins and White.
+	\item https://github.com/vinitX/EMO\_Lab.
+\end{itemize}
+ 
+\end{document}

@@ -1,0 +1,22 @@
+\contentsline {chapter}{\numberline {1}Introduction and motivation}{3}{chapter.1}
+\contentsline {section}{\numberline {I}Summary of experiments performed}{3}{section.1.1}
+\contentsline {chapter}{\numberline {2}Experimental set-ups and relevant theory}{4}{chapter.2}
+\contentsline {section}{\numberline {I}Fabry Perot Interferometer with laser }{4}{section.2.1}
+\contentsline {section}{\numberline {II}Fabry Perot Interferometer with Sodium Lamp}{7}{section.2.2}
+\contentsline {section}{\numberline {III}Michelson Interferometer with laser}{9}{section.2.3}
+\contentsline {section}{\numberline {IV}Michelson Interferometer with Na Lamp}{11}{section.2.4}
+\contentsline {chapter}{\numberline {3}Experimental results and analysis}{13}{chapter.3}
+\contentsline {section}{\numberline {I}Fabry Perot Interferometer with Laser}{13}{section.3.1}
+\contentsline {section}{\numberline {II}Fabry Perot Interferometer with Sodium Lamp}{16}{section.3.2}
+\contentsline {section}{\numberline {III}Michelson Interferometer with Laser}{19}{section.3.3}
+\contentsline {section}{\numberline {IV}Michelson Interferometer with Sodium Lamp}{22}{section.3.4}
+\contentsline {chapter}{\numberline {4}Error Analysis}{25}{chapter.4}
+\contentsline {section}{\numberline {I}Fabry Perot Interferometer with Laser}{25}{section.4.1}
+\contentsline {section}{\numberline {II}Fabry Perot Interferometer with Sodium Lamp}{25}{section.4.2}
+\contentsline {section}{\numberline {III}Michelson Interferometer with Laser}{26}{section.4.3}
+\contentsline {section}{\numberline {IV}Michelson Interferometer with Sodium Lamp}{26}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusion, discussion and remarks}{27}{chapter.5}
+\contentsline {section}{\numberline {I}Fabry Perot Interferometer with Laser}{27}{section.5.1}
+\contentsline {section}{\numberline {II}Fabry Perot Interferometer with Sodium Lamp}{28}{section.5.2}
+\contentsline {section}{\numberline {III}Michelson Interferometer with Laser}{29}{section.5.3}
+\contentsline {section}{\numberline {IV}Michelson Interferometer with Sodium Lamp}{30}{section.5.4}
